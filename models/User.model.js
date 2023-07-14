@@ -61,7 +61,7 @@ const userSchema = mongoose.Schema({
             values: ["active", "inactive", "block"],
             message: "{VALUE} is not a valid status!"
         },
-    }, 
+    },
     role: {
         type: String,
         required: [true, "role is required!"],
