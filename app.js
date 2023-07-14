@@ -22,9 +22,11 @@ app.use(
 
 //route
 app.use("/api/user", userRouter)
-
+app.get('/', (req, res) => {
+    res.send('welcome!')
+});
 app.get('/api/', (req, res) => {
-    res.send('Hello world')
+    res.send('root api!')
 });
 app.all('*', (req, res) => {
     res.json({
